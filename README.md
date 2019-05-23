@@ -249,6 +249,21 @@
 		+ tv 电视机
 		浏览器负责解释，有可能比较随意。并可以使用AND,OR,NOT组合,width配合max-min-使用，media使用的特性包含：width，height，device-width，device-height，resolution，orientation(portrait/landscape)，aspect-ratio,aspect-ratio,device-aspect-ratio,monochrome,color-index,scan(progressive/interlace),grid(0/1)
 + 指定外部资源
-	+定义了6个局部属性：href，hreflang，media，rel，sizes，type
+	+ 定义了6个局部属性：href，hreflang，media，rel，sizes，type  
 		+ link元素rel属性值：alternate，author，help，icon，license，pingback，prefetch，stylesheet，全面介绍：http://iana.org/assignments/link-relations/link-relations.xml
 		+ 添加网站标志,默认会载入服务器根目录下的favicon.ico
+		+ 预先获取资源
++ 使用脚本元素，建议放在head部分
+	+ script元素的局部属性，type,src,defer,async,charset
+	+ 定义内嵌脚本，默认情况下，浏览器在页面一遇到脚本就会执行。
+	+ 载入外部脚本库，不可用自闭合标签，会被忽略掉。
+	+ 推迟脚本执行，defer等页面载入和解析完毕后执行脚本
+	+ async异步执行脚本,脚本不再按定义它们的次序执行，不要使用其他脚本函数。
+
+## 第八章 标记文字
++ 生成超链接 url支持http,https,ftp,mailto,相对路径，内部id表达式(找不到会找name)
+	+ target属性，_blank新窗口打开，_parent父窗框，_self当前窗口打开，_top顶层窗口打开，<frame>在指定窗框中打开
++ 用基本文字元素标记内容
+	+ 表示关键词和产品名称 b
+	+ 加以强调 em
+	+ 表示外文词与或科技术语
