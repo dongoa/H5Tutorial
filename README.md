@@ -53,4 +53,178 @@
 			1. id值数目
 			2. 其他属性和伪类数目
 			3. 元素名和伪元素数目  
-		评估具体程度时使用a-b-c形式(其中每一个字母以此代表上述三类特征的统计结果)，比较方法按照a、b、c优先级比较来确定具体程度。
+		评估具体程度时使用a-b-c形式(其中每一个字母以此代表上述三类特征的统计结果)，比较方法按照a、b、c优先级比较来确定具体程度。  
+		如果具体程度相同，浏览器根据其位置先后选择所用值，后来者居上。
+	+ 继承：如果浏览器在直接相关样式中找不到某个属性值，就会应用于继承机制，使用父元素的这个样式值。
+	+ CSS中的颜色,CSS扩展的颜色名：http://www.w3.org/TR/css3-color ,css颜色函数rgb,rgba,hsl(hue,saturaion,lightness),hsla()
+	+ CSS中的长度:
+		+ 绝对长度：in英尺，cm厘米，mm毫米，pt磅，pc pica
+		+ 相对长度：em与元素字号挂钩，ex与元素字体的x高度挂钩，rem与根元素的字号挂钩，px css像素，% 另一属性值的百分比
+			+ 像素单位，*参考像素是距读者一臂之遥的像素密度为96dpi的设备上一个像素的视角。*主流浏览器将1像素视为1英尺的1/96
+			+ 对于百分比单位，并非所有属性都能用这个单位，还有一点是百分比挂钩的其他属性各不相同。
+			+ 目前缺乏支持的CSS相对度量单位，gd 网格挂钩，vw 与视口挂钩， vh视口高度挂钩，vm,ch
+			+ 用算式做值 calc()
+		+ CSS角度： deg度(取值范围0~360)，grad百分度(取值范围0~400)，rad弧度(取值范围0~6.28)，turn圆周(1turn等于360deg)
+		+ CSS时间： s ms
+	+ 测试CSS 支持情况
+		+ 网站：http://caniuse.com
+		+ 测试特性并作出调整的js库：https://modernizr.com/
+	+ CSS工具：
+		+ 一个很老的工具，通过用户点击生成CSS选择器：https://selectorgadget.com/
+		+ LESS改进CSS：http://lesscss.org/
+		+ CSS框架
+
+
+## 第四章 初探JavaScript
++ 读物网站：http://lifehacker.com 书籍： 《JavaScript:The Definitive Guide》,高级 《Pro JavaScript Design Patterns》
++ delete可以删除对象的方法和属性，in检查对象是否具有某个属性。 
++ 显示类型转换： toString，将数值转换为字符串
+	+ 数字到字符串转换方法：
+		+ toString():十进制，toString(2/8/16)
+		+ toFixed(n):以小数点后n位数字形式表示实数
+		+ toExponential(n):指数表示法表示数值，尾数小数点前后分别1位和n位
+		+ toPrecision(n):n位有效数字表示
+	+ 字符串转换数值
+		+ Number(<str>) 严格解析整数或实数
+		+ parseInt(<str>) 自动忽略非数值
+		+ parseFloat(<str>)
++ 内置数组方法：
+	+ concat(<otherArray>)合并多个数组
+	+ join(<separator>)将数组元素链接为字符串
+	+ pop()删除返回最后一个元素
+	+ push(<item>)数组当作栈使用，添加数组
+	+ reverse()反转数组
+	+ shift()删除第一个元素
+	+ slice(<start>,<end>)返回子数组
+	+ sort()就地对数组排序
+	+ unshift(<item>)开头插入数组
++ 处理错误：try...catch Error对象有3个属性message,name,number
++ undefined和null的判断，使用!,全等和相等符号来区分
++ JavaScript库： jQuery
+
+## 第五章 HTML5元素背景知识
++ 语义与呈现分离：HTML5一大主要变化就是元素的语义与元素对其内容呈现结果的影响分开。
++ 元素选用的原则：
+	+ 少亦可为多
+	+ 别误用元素，如果没有自己所要含义的元素，可以考虑span或div
+	+ 具体为佳，一以贯之，如果又元素能恰当表明内容类型，就不需要使用通用元素。
+	+ 对用户不要想当然，呈现与语义分离的目的完全是为了让HTML文档更易于程序化处理。
++ 元素速览
+	+ 文档和元数据元素
+		+ base 设置相对URL基础
+		+ body 表示HTML文档内容
+		+ DOCTYPE 表示HTML文档开始
+		+ head 包含文档的元数据
+		+ html 表示文档html的开始
+		+ link 定义与外部资源的关系
+		+ meta 提供关于文档的信息
+		+ noscript 包含浏览器不支持脚本时显示的内容
+		+ script 脚本
+		+ style css样式
+		+ title 设置文档标题
+	+ 文本元素，提供基本的结构和含义
+		+ a 生成超链接 流类型
+		+ abbr 缩略语 
+		+ b
+		+ br 表示换行
+		+ cite 表示其他作品标题
+		+ code 计算机代码片段
+		+ del 从文档中删除的文字 流类型
+		+ dfn 表示术语定义
+		+ em 强调文字
+		+ i 与周围内容不同的文字
+		+ ins 表示加入文档的文字 流元素
+		+ kbd 表示用户输入内容
+		+ mark 突出显示标记
+		+ q 表示引自他处内容
+		+ rp 与ruby结合使用，标记括号
+		+ rt 与ruby结合使用，标记注音符号
+		+ ruby 表示位于表意文字上方或右方的注音符号
+		+ s 表示文字已不再准确
+		+ samp 表示计算机程序输出内容
+		+ small 小号字体内容
+		+ span 通用元素，无语义
+		+ strong 重要
+		+ sub 下标文字
+		+ sup 上标文字
+		+ time 表示时间或日期
+		+ u 不带强调或着重意味标记一段文字
+		+ var 表示计算机变量
+		+ wbr 可安全换行的地方
+	+ 对内容分组
+		+ blockquote 表示引自他处大段内容 流元素
+		+ dd 用在dl中表示定义
+		+ div 通用元素，类似span，是在流元素中的对应物
+		+ dl 术语定义说明 流
+		+ dt 属于
+		+ figcaption figure标题
+		+ figure 图片 流
+		+ hr 主题转换 流
+		+ li 用在ul、ol、menu中，列表项
+		+ ol 有序列表 流
+		+ p 表示段落 流
+		+ pre 表示其格式应被保留的内容 流
+		+ ul 无序列表 流
+	+ 划分内容
+		+ address 表示文档或article联系信息 流
+		+ article 表示一段独立的内容 流
+		+ aside 表示与周边内容稍有牵涉的内容 流
+		+ details 生成一个区域，用户展开可以获得更多细节知识 流
+		+ footer 表示尾部 流
+		+ h1~h6 标题 流
+		+ header 首部
+		+ hgroup 组织标题，显示一个 流
+		+ nav 有意集中在一起的导航元素 流
+		+ section 表示一个重要概念或主题 流
+		+ summary 用在details中，表标题或说明 
+	+ 制表，HTML5中表格不在控制页面布局
+		+ caption 表格标题
+		+ col 一列
+		+ colgroup 一组列
+		+ table 表格 流
+		+ tbody 表格主体
+		+ td 单元格
+		+ tfoot 表脚
+		+ th 标题行单元格
+		+ thead 标题行
+		+ tr 一行单元格
+	+ 创建表单
+		+ button 提交或重置表单按钮
+		+ datalist 提供建议值 流
+		+ fieldset 一组表单元素 流
+		+ form HTML表单 流
+		+ input 输入控件
+		+ keygen 生成公钥和私钥
+		+ label 表单元素说明标签
+		+ legend fieldset说明标签
+		+ optgroup 一组相关option元素
+		+ option 选项
+		+ output 计算结果
+		+ select 固定选项
+		+ textarea 输入多行文字
+	+ 嵌入内容
+		+ area 客户端分区响应图的区域
+		+ audio 音频资源
+		+ canvas 画布 流
+		+ embed 用插件在html文档中嵌入内容
+		+ iframe 在一个文档中嵌入另一个文档
+		+ img 嵌入图像
+		+ map 定义客户端分区响应图
+		+ meter 嵌入数值在许可范围背景中的图形表示
+		+ object 嵌入内容
+		+ param 通过object元素传递给插件的参数
+		+ progress 嵌入目标进展图形表示
+		+ source 媒体资源
+		+ svg 结构化矢量内容
+		+ track 媒体附加轨道
+		+ video 视频资源
+
+## 第六章 创建HTML文档
++ 构筑基本的文档结构，文档元素只有4个，但是任何HTML文档都需要所有这些元素
+	+ DOCTYPE元素
+	+ html元素，更恰当的名称根元素
+	+ head元素，包含文档的元数据，向浏览器提供有关文档内容和标记的信息，脚本和外部资源，必须包含一个title
+	+ body元素
++ 用元数据元素说明文档
+	+ 文档标题title
+	+ 设置相对URL的解析基准，让HTML文档中的相对链接咋此基础上进行解析
