@@ -227,4 +227,28 @@
 	+ body元素
 + 用元数据元素说明文档
 	+ 文档标题title
-	+ 设置相对URL的解析基准，让HTML文档中的相对链接咋此基础上进行解析
+	+ 设置相对URL的解析基准，让HTML文档中的相对链接咋此基础上进行解析,其包含两个属性：
+		+ href
+		+ traget
+	+ 用元数据说明文档meta元素，其包含多种用途：
+		+ 指定名/值元数据对，使用name，content，元数据名称扩展见：http://wiki.whatwg.org/wiki/MetaExtensions ,可以使用该功能告诉搜索引擎如何对内容分类分级，谷歌指南参见：http://google.com/support/webmasters/bin/topic.py?topic=15260
+		+ 声明字符编码，charset="utf-8"
+		+ 模拟HTTP标头字段，http-equiv="refersh" content="5;url",作用是让浏览器每隔秒就再次载入页面，加url会载入指定url，meta元素http-equiv有3个值，分别为refresh，default-style指定对应content属性值与同一文档中某个style元素或link元素title属性值相同，content-type，另一种声明HTML页面所用字符编码方法。
++ 定义CSS样式,style元素可以出现在HTML文档的各个部分
+	1. 指定样式类型type="text/css"
+	2. 指定样式作用范围 scoped浏览器不支持
+	3. 指定样式适用的媒体，media属性,media属性的规定设备值
+		+ all 用于所有设备
+		+ aural 用于语音合成器
+		+ braillle 用于盲文设备
+		+ handheld 用于手持设备
+		+ projection 用于投影机
+		+ print 用于打印预览和打印页面
+		+ screen 用于计算机显示器屏幕
+		+ tty 电传打字机
+		+ tv 电视机
+		浏览器负责解释，有可能比较随意。并可以使用AND,OR,NOT组合,width配合max-min-使用，media使用的特性包含：width，height，device-width，device-height，resolution，orientation(portrait/landscape)，aspect-ratio,aspect-ratio,device-aspect-ratio,monochrome,color-index,scan(progressive/interlace),grid(0/1)
++ 指定外部资源
+	+定义了6个局部属性：href，hreflang，media，rel，sizes，type
+		+ link元素rel属性值：alternate，author，help，icon，license，pingback，prefetch，stylesheet，全面介绍：http://iana.org/assignments/link-relations/link-relations.xml
+		+ 添加网站标志,默认会载入服务器根目录下的favicon.ico
