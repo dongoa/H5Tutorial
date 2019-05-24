@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <base href="http://www.baidu.com"/> -->
+	<meta charset="utf-8">
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<style type="text/css">
+		thead th, tfoot th { text-align:left; background: grey; color:white; }
+		tbody th:only-of-type { text-align:right; background: lightgrey; color:grey; }
+		[colspan],[rowspan] { font-weight: bold; border:medium solid black;  }
+		thead [colspan], tfoot [colspan] {text-align: center;}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th id="rank">Rank</th>
+				<th id="name">Name</th>
+				<th id="color">Color</th>
+				<th id="sizeAndVotes" colspan="2">Size & Votes</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th id="first" headers="rank">Favorite:</th>
+				<td headers="name first">Apples</td>
+				<td headers="color first">Green</td>
+				<td headers="sizeAndVotes first">Medium</td>
+				<td headers="sizeAndVotes first">50</td>
+			</tr>
+			<tr>
+				<th id="second" headers="rank">2nd Favorite:</th>
+				<td id="name second">Oranges</td>
+				<td id="color second">Orange</td>
+				<td id="sizeAndVotes second">Large</td>
+				<td id="sizeAndVotes second">450</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="5"> & copy; 2011 DONGAo Fruit Data Enteprises</th>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

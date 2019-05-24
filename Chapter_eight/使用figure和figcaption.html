@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <base href="http://www.baidu.com"/> -->
+	<meta charset="utf-8">
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<style>
+		body{
+			counter-reset: OuterItemCount 5 InnerItemCount;
+		}
+		#outerlist > li:before{
+			content: counter(OuterItemCount) ". ";
+			counter-increment: OuterItemCount 2;
+		}
+
+		ul.innerlist > li:before{
+			content: counter(InnerItemCount, lower-alpha) ". ";
+			counter-increment: InnerItemCount;
+		}
+	</style>
+</head>
+<body>
+	I like apples and oranges.
+
+	<figure>
+		<figcaption>Listing 23. Using the code element</figcaption>
+		<code>var fruits=["apples","oranges","mangoes"];<br>
+		document.writeln("I like " + fruits.length + " fruits");
+		</code>
+	</figure>
+		<li>grapes</li>
+	You can see other fruits I like <a href="fruitlist.html">here</a>
+</body>
+</html>
