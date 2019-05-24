@@ -332,3 +332,8 @@
 ## 第十一章 表单
 + 制作基本表单form input button
 + 配置表单
+	+ 配置表单的action属性，说明提交表单时浏览器应该把用户手机数据发送到什么地方
+	+ 配置HTTP方法属性，指定用来将表单数据发送到服务器的HTTP方法，GET安全交互，POST不安全交互，参www.w3.org/Provider/Style/URI
+	+ 配置数据编码，enctype属性3种
+		+ application/x-www-form-urlencoded编码，不能上传文件，编码结果：fave=Apple&name=Adam+Freeman
+		+ multipart/form-data编码
