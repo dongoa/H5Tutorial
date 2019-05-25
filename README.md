@@ -336,4 +336,18 @@
 	+ 配置HTTP方法属性，指定用来将表单数据发送到服务器的HTTP方法，GET安全交互，POST不安全交互，参www.w3.org/Provider/Style/URI
 	+ 配置数据编码，enctype属性3种
 		+ application/x-www-form-urlencoded编码，不能上传文件，编码结果：fave=Apple&name=Adam+Freeman
-		+ multipart/form-data编码
+		+ multipart/form-data编码,用于上传文件到服务器列表
+		+ text/plain编码，不规范
+	+ 控制表单的自动完成功能
+	+ 指定表单反馈信息的目标显示位置target属性，属性值包含\_blank,\_parent,\_self,\_top,<frame>
+	+ 设置表单名称 name属性为表单设置一个独一无二的标识符,不如input的name那么重要，只限于DOM
+	+ 在表单中添加说明标签label
+	+ 自动聚焦到某个input元素
+	+ 禁用单个input元素
+	+ 对表单元素编组 fieldset元素
+	+ 为fieldset元素添加说明标签 legend元素
+	+ 使用button元素 type属性值submit、reset、button
+		+ buttontype为submit时，额外属性form、formaction、formenctype、formmethod、formtarget、formnovalidate，都是覆盖操作
+		+ 用button元素重置表单
+		+ button元素也可以作为一般元素使用，上面的文字可以使用短语元素进行标记
+	+ 使用表单外的元素，只需要将其form属性设置为相关form元素的id属性值即可。
