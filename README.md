@@ -351,4 +351,26 @@
 		+ 用button元素重置表单
 		+ button元素也可以作为一般元素使用，上面的文字可以使用短语元素进行标记
 	+ 使用表单外的元素，只需要将其form属性设置为相关form元素的id属性值即可。
-	+ 定制input元素
+
+## 第十二章 定制input元素
++ 用input元素输入文字
+	+ text型input元素可用额外属性：dirname、list、maxlength、pattern、placeholder、readonly、required、size、value
+		+ 设定元素大小 maxlength、size
+		+ 设置初始值和占位式提示 value、placeholder
+		+ 使用数据列表 datalist
+		+ 生成只读或禁用的文本框 readonly和disabled属性
+		+ 输入密码，服务器收到的是明文密码，应该考虑使用SSL、HTTPS
++ 用input元素生成按钮，type设为submit、reset、button时生成button元素
++ 用input元素为输入数据把关
+	+ 用于输入受限数据的input元素的type属性值：checkbox、color、date、datetime、datetime-local、email、month、number、radiobutton、range、tel、time、week、url
+	+ 用input元素获取数值，number型input元素可用额外属性，list、min、max、readonly、required、step、value
+	+ 用input元素获取指定范围内的数值，range属性
+	+ 用input元素获取布尔型输入，checkbox型input元素可用额外属性checked、required、value
+	+ 用input元素生成一组固定选项，radio型，checked、required、value
+	+ 用input元素获取有规定格式的字符串，email、tel、url型额外属性：list、maxlength、pattern、placeholder、readonly、required、size、value，email型input还有一个multiple属性
+	+ 用input元素获取时间和日期，datetime、datetime-local、date、month、time、week，时间戳格式RFC339，参见http://tools.ietf.org/html/rfc3339 ,用于日期input元素的额外属性，list、min、max、readonly、required、step、value
+	+ 用input获取颜色值
+	+ 用input元素获取搜索用词，和text只是外观有区别
+	+ 用input元素生成隐藏的数据项
+	+ 用input元素生成图形按钮和分区响应图，image型input元素额外属性，alt、formaction、formenctype、formethod、formtarget、formnovalidate、height、src、width(不设置此值图形将以其本身宽度显示)
+	+ 用input元素上传文件，file型input元素可用额外属性accept、multiple(尚无支持)、required
