@@ -374,3 +374,8 @@
 	+ 用input元素生成隐藏的数据项
 	+ 用input元素生成图形按钮和分区响应图，image型input元素额外属性，alt、formaction、formenctype、formethod、formtarget、formnovalidate、height、src、width(不设置此值图形将以其本身宽度显示)
 	+ 用input元素上传文件，file型input元素可用额外属性accept、multiple(尚无支持)、required
+
+## 第十三章 其他表单元素及输入验证
++ 使用其他表单元素
+	+生成选项列表，select元素，name、disabled、form、autofocus、required属性与input类似，size属性显示选项数目，multiple属性可以设置为多选。可以用optgroup元素建立结构。
+	+ 输入多行文字，textarea，rows、cols设置大小，wrap:hard/soft换行方式，其他属性与input同名属性相同

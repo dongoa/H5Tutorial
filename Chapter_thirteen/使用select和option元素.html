@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <base href="http://localhost:8080"/> -->
+	<meta charset="utf-8">
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<style type="text/css">
+	
+	</style>
+</head>
+<body>
+	<form method="post" action="http://localhost:8080/form">
+		<p>
+			<label for="name">
+				Name: <input id="name" name="name"/>
+			</label>
+		</p>
+		<p>
+			<label for="password">
+				Password: <input type="password" placeholder="Min 6 characters" id="password" name="password"/>
+			</label>
+		</p>
+		<p>
+			<label for="fave">
+				Favorite Fruit: 
+				<select id="fave" name="fave">
+					<option value="apples" selected="" label="Apples">Apples</option>
+					<option value="oranges"  label="Oranges">Oranges</option>
+					<option value="cherries" label="Cherries">Cherries</option>
+					<option value="pears" label="Pears">Pears</option>
+				</select>
+			</label>
+		</p>
+
+		<input type="submit"  value="Submit" />
+		
+	</form>
+</body>
+</html>
