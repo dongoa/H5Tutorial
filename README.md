@@ -457,4 +457,14 @@
 	:checked|选取所有选中的复选框和单选按钮|3
 	:default|选取默认元素|3
 	:valid\/:invalid|选取基于输入验证判定的有效或者无效的input元素|3
-	
+	:in-range\/:out-of-range|选取被限定在指定范围之内或者之外的input元素|3
+	:required\/:optional|根据是否允许使用required属性选取input元素|3
+	:link|选取未访问的链接元素|1
+	:visited|选取用户已访问的链接元素|1
+	:hover|选取鼠标指针悬停在其上面的元素|2
+	:active|选取被用户激活，即将点击的元素|2
+	:focus|选取获得焦点的元素|2
+	:not(\<选择器\>)|否定选择(选取所有不匹配的元素)|3
+	:empty|选取不包含任何子元素或文本的元素|3
+	:lang(\<语言\>)|选取lang属性为指定值得元素|2
+	:target|选取URL片段标识符指向的元素|3
