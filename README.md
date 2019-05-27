@@ -379,3 +379,17 @@
 + 使用其他表单元素
 	+生成选项列表，select元素，name、disabled、form、autofocus、required属性与input类似，size属性显示选项数目，multiple属性可以设置为多选。可以用optgroup元素建立结构。
 	+ 输入多行文字，textarea，rows、cols设置大小，wrap:hard/soft换行方式，其他属性与input同名属性相同
+	+ 表示计算结果 output属性
+	+ 生成公开/私有密钥对，keygen元素
+		+ name、disabled、form和autofocus属性与input元素同名属性相同，keytype属性指定生成密钥的算法，challenge属性用来指定一条与公钥一起发送给服务器的密钥管理口令。
+		+ 使用输入验证required、min、max、pattern
+			+ 确保用户提供了一个值,required,value初始值可以满足
+			+ 确保输入值位于某个范围内，min、max
+			+ 确保输入值与指定模式匹配，pattern
+			+ 确保输入值是电子邮箱或URL，用pattern
+			+ 禁用输入验证，form元素的novalidate属性，input或button的formnovalidate属性
+
+## 第十四章 嵌入内容
++ 嵌入图像，不要使用width、height缩放，用途是告诉浏览器图像尺寸
+	+ 在超链接里嵌入图像，结合a
+	+ 创建客户端分区响应图，map元素
