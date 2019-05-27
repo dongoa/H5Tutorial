@@ -413,3 +413,7 @@
 # CSS部分
 
 ## 理解CSS
++ 浏览器特定厂商前缀
+	浏览器|Chrome、Safari|Opera|Firefox|Internet Explorer|
+	:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+	厂商前缀|-webkit|-o-|-moz-|-ms-
