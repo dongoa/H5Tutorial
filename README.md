@@ -417,5 +417,5 @@
 
 
 浏览器|Chrome、Safari|Opera|Firefox|Internet Explorer
--|:-:|:-:|:-:|-
+:-:|:-:|:-:|:-:|:-:
 厂商  |-webkit       |  -o-|  -moz-|  -ms-
