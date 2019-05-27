@@ -415,6 +415,7 @@
 ## 理解CSS
 + 浏览器特定厂商前缀  
 
-			浏览器|Chrome、Safari|Opera|Firefox|Internet Explorer
-			:-:|:-:|:-:|:-:|:-:
-			厂商  |-webkit       |  -o-|  -moz-|  -ms-
+	浏览器|Chrome、Safari|Opera|Firefox|Internet Explorer
+	:-:|:-:|:-:|:-:|:-:
+	厂商  |-webkit       |  -o-|  -moz-|  -ms-
++ 盒模型，内容、边框、内边距、外边距
