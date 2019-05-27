@@ -1,4 +1,6 @@
 # H5知识点整理
+
+# HTML部分
 ## 第一章 背景知识
 ### H5的改进
 + 支持在浏览器中直接播放视频和音频
@@ -392,4 +394,22 @@
 ## 第十四章 嵌入内容
 + 嵌入图像，不要使用width、height缩放，用途是告诉浏览器图像尺寸
 	+ 在超链接里嵌入图像，结合a
-	+ 创建客户端分区响应图，map元素
+	+ 创建客户端分区响应图，map元素，area元素分为两类，第一类是导航到url(相关属性href、alt、target、rel、media、hreflang、type)，第二类是代表区域使用shape和coords属性控制(rect、circle、poly、default)。
++ 嵌入另一张HTML文档，属性包括src、srcdoc、name、width、height、sandbox、seamless(后两种可以独立启用功能，浏览器暂不支持)
++ 通过插件嵌入内容
+	+ embed元素
+	+ 使用object和param元素
++ object元素的其他用途
+	+ 使用object嵌入图像
+	+ 使用object创建分区响应图
+	+ 将object元素作为浏览器上下文环境
++ 嵌入数字表现形式
+	+ 显示进度，progress元素
+	+ 显示范围里的值，meter元素，属性包括min、max、low、high、optimum、value、form
++ 其他嵌入元素，之后会深入讨论
+	+ 嵌入音频和视频audio、video、source、track
+	+ 嵌入图形 canvas
+
+# CSS部分
+
+## 理解CSS
