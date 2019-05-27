@@ -429,4 +429,9 @@
 	.\<class\>|选取指定类的元素|1
 	#\<id\>|选取id属性为指定值得元素|1
 	[attr]|选取定义了attr属性，属性任意的元素|2
-	[attr="val"]||选取定义了attr属性，属性值val的元素|2
+	[attr="val"]|选取定义了attr属性，属性值val的元素|2
+	[attr^="val"]|选取定义了attr属性，属性值val打头的元素|2
+	[attr$="val"]|选取定义了attr属性，属性值val结尾的元素|2
+	[attr*="val"]|选取定义了attr属性，属性值包含val的元素|2
+	[attr~="val"]|选取定义了attr属性，属性值为多个值，其中一个为val的元素|2
+	[attr|="val"]|选取定义了attr属性，属性值以连字符分隔，第一个为val的元素|2
