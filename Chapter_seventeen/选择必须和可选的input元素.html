@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		:required{
+			outline: medium solid green;
+		}
+		:optional{
+			outline: medium solid yellow;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="http://titan:8080/form">
+		<p>
+			<label for="price">
+				$ per unit in your area:
+				<input required="" type="number" min="0" max="100" value="1" id="price" name="price"/></label>
+		</p>
+		<p>
+			<label for="price2">
+				$ per unit in your area:
+				<input type="number" min="0" max="100" value="1" id="price2" name="price2"/></label>
+		</p>
+		<input type="submit" value="Submit"/>
+	</form>
+</body>
+</html>

@@ -473,3 +473,43 @@
 
 ## 第十六章 使用CSS选择器I
 + 选择所有元素
++ 复合选择器
+	+ 并集选择器，
+	+ 后代选择器,空格
+	+ 选择子元素
+	+ 选择兄弟元素,相邻兄弟\/普通兄弟(在匹配元素之后)
++ 使用伪元素选择器，两种伪元素和伪类
+	+ 使用::first-line选择器，匹配文本块的首行
+	+ 使用::first-letter选择器，首字母，单冒号浏览器也认伪类向后兼容
+	+ 使用:before和:after选择器，生成内容并插入
+	+ 使用CSS计数器,使用counter-reset： paracount n othercounter;初始化值,初始化后作为counter属性的值content:counter(paracount,lower-alpha) ". ";后面的格式可以是list-style-type属性支持的任意值，然后设置增量counter-increment:paracount 1;
+
+## 第十七章 使用CSS选择器II
+**伪类**跟伪元素一样，不是直接针对文档元素，而是为你基于某些共同特征选择元素提供方便。
++ 使用结构性伪类选择器，根据元素在文档中的位置选择元素，都有一个冒号，可单独或组合使用。
+	+ 使用根元素选择器 :root 返回html
+	+ 使用子元素选择器
+		+ :first-child选择器
+		+ :last-child选择器
+		+ :only-child选择器
+		+ :only-of-type选择器，属于父元素的指定特定类型的唯一子元素
+		+ 使用:nth-child选择器，制定一个索引可以匹配特定位置
+			+ :nth-child(n)选择父元素的第n个子元素
+			+ :nth-last-child(n)选择父元素的倒数第n个子元素
+			+ :nth-of-type(n) 选择父元素定义类型的第n个子元素
+			+ :nth-last-of-type(n)选择父元素定义类型的倒数第n个子元素
++ 使用UI伪类选择器  
+可以根据元素的状态匹配元素
+	+ 选择启用或禁用状态的元素 :enabled :disabled,而且不会匹配没有禁用状态的元素
+	+ 选择已勾选的元素 :checked
+	+ 选择默认元素 :default
+	+ 选择有效和无效的input元素 :valid和:invalid
+	+ 选择限定范围的input元素 :in-range匹配位于指定范围内的input元素,:out-of-range相反
+	+ 选择必须和可选的input元素 :required匹配具有required属性的input元素，:optional相反
++ 使用动态伪类选择器
+	+ 使用:link和:visited选择器,visited针对浏览器已访问过的url
+	+ 使用:hover选择器
+	+ 使用:active选择器，鼠标点击(触摸屏按压)
+	+ 使用:focus选择器
++ 其他伪类选择器
+	+ 使用否定选择器 
