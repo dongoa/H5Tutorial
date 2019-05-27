@@ -414,6 +414,8 @@
 
 ## 理解CSS
 + 浏览器特定厂商前缀  
+
+
 浏览器|Chrome、Safari|Opera|Firefox|Internet Explorer
-:----:|:------------:|:---:|:-----:|:---------------:
+-|:-:|:-:|:-:|-:
 厂商  |-webkit       |  -o-|  -moz-|-ms-
