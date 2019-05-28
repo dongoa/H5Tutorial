@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		tr > th { text-align:left; background: gray; color:white;  }
+		tr > th:only-of-type{ text-align: right; background: lightgray; color:gray;  }
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Rank</th><th>Name</th><th>Color</th><th>Size</th>
+		</tr>
+		<tr id="firstchoice">
+			<th>Favorite:</th><td>Apples</td><td>Green</td><td>Medium</td>
+		</tr>
+		<tr>
+			<th>2nd Favorite:</th><td>Oranges</td><td>Orange</td><td>Large</td>
+		</tr>
+	</table>
+		<p>
+			<button>Visible</button>
+			<button>Collapse</button>
+			<button>Hidden</button>
+		</p>
+		<script type="text/javascript">
+			var buttons=document.getElementsByTagName("BUTTON");
+			for(var i=0;i<buttons.length;i++){
+				buttons[i].onclick=function(e){
+					document.getElementById("firstchoice").style.visibility=e.target.innerHTML;
+				}
+			}
+		</script>
+</body>
+</html>

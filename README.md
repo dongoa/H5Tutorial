@@ -537,3 +537,22 @@
 + 创建盒子阴影  
 box-shadow:hoffset/voffset/blur/spread/color/inset后面4个为可选colorchrome必选
 	+ 应用轮廓，轮廓属性outline-(color/offset/style/width)
+
+## 第十九章 使用盒模型
++ 为元素应用内边距 padding-(top/right/bottom/left)
++ 为元素应用外边距 margin-(top/right/bottom/left),display:inline时外边距不会显示
++ 控制元素的尺寸 Width Heihgt min/max-width/height box-sizing:(content-box/padding-box/border-box/margin-box)
+	+ 设置一定尺寸的盒子,元素的高度包含内容高度、内外边距、边框值。
+	+ 设置最小和最大尺寸
++ 处理溢出内容 overflow-x/y,overflow:auto、hidden、no-content(不支持)、no-display(不支持)、scroll、visible
++ 控制元素的可见性 visible:collapse、hidden、visible,对于不支持此特性的可用display:none。
++ 设置元素的盒类型
+	+ 认识块级元素，display:block
+	+ 认识行内元素,inline会忽略某些属性，如width、height、margin
+	+ 认识行内-块级元素，可以应用上面的属性
+	+ 认识插入元素，display:run-in
+	+ 隐藏元素 display:none
+	+ 创建浮动盒 float:left/right/none(元素位置固定)
+	+ 阻止浮动元素堆叠 clear:left/right/both/none
+
+## 第二十章创建布局
