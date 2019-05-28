@@ -581,3 +581,8 @@ inline、block、inline-block、list-item、run-in、compact(不支持)、flexbo
 	+ 指定单词、字母、行之间的间距letter-spacing/word-spacing/line-height
 	+ 控制断词 word-wrap属性(normal/break-word)
 	+ 首行缩进 text-indent 长度值/百分数
++ 文本装饰与大小写转换  
+text-decoration:none/underline/overline/line-through/blink
+text-transform:none/capitalize/uppercase/lowercase
++ 创建文本阴影 text-shadow属性h-shadow/v-shadow/blur/color
++ 使用字体font:<font-style><font-variant><font-weight><font-size><font-family>
