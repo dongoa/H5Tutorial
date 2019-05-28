@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<style type="text/css">
+		#onepiece{
+			width: 400px;
+			margin:5px;
+			padding: 5px;
+			border:medium double black;
+			background-color: lightgray;
+		}
+	</style>
+</head>
+<body>
+	<p id="onepiece">
+		One Piece (Japanese: ワンピース Hepburn: Wan Pīsu) is a Japanese manga series written and illustrated by Eiichiro Oda. 
+		The manga spawned a media franchise, having been adapted into a festival film produced by Production I.G, and an anime series produced by Toei Animation, which began broadcasting in Japan in 1999. 
+		One Piece has received praise for its storytelling, art, characterization, and humor. Several volumes of the manga have broken publishing records, including the highest initial print run of any book in Japan.
+	</p>
+	<p>
+		<button>Start</button>
+		<button>End</button>
+		<button>Left</button>
+		<button>Right</button>
+		<button>Justify</button>
+		<button>Center</button>
+	</p>
+	<script type="text/javascript">
+		var buttons = document.getElementsByTagName("BUTTON");
+		for(var i=0;i<buttons.length;i++){
+			buttons[i].onclick=function(e){
+				document.getElementById("onepiece").style.textAlign=e.target.innerHTML;
+			};
+		}
+	</script>
+</body>
+</html>

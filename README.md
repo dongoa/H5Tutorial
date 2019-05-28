@@ -546,7 +546,8 @@ box-shadow:hoffset/voffset/blur/spread/color/inset后面4个为可选colorchrome
 	+ 设置最小和最大尺寸
 + 处理溢出内容 overflow-x/y,overflow:auto、hidden、no-content(不支持)、no-display(不支持)、scroll、visible
 + 控制元素的可见性 visible:collapse、hidden、visible,对于不支持此特性的可用display:none。
-+ 设置元素的盒类型
++ 设置元素的盒类型  
+inline、block、inline-block、list-item、run-in、compact(不支持)、flexbox、table(布局相关)、ruby(跟带ruby注释文本布局相关)、none
 	+ 认识块级元素，display:block
 	+ 认识行内元素,inline会忽略某些属性，如width、height、margin
 	+ 认识行内-块级元素，可以应用上面的属性
@@ -555,4 +556,28 @@ box-shadow:hoffset/voffset/blur/spread/color/inset后面4个为可选colorchrome
 	+ 创建浮动盒 float:left/right/none(元素位置固定)
 	+ 阻止浮动元素堆叠 clear:left/right/both/none
 
-## 第二十章创建布局
+## 第二十章创建布局  
+推荐框架Blueprint(www.blueprintcss.org)
++ 定位内容  
+定位属性：position、left、right、top、bottom(长度、百分数、auto)、z-index
+	+ 设置定位类型 positon:static(位置的属性不管用)、relative、absolute、fixed
+	+ 设置元素的层叠顺序 z-index
++ 创建多列布局  
+多列属性column-count、column-fill(balance\/auto)、column-gap、column-rule、column-rule-color、column-rule-style、column-rule-width、colums、column-span、column-width。
++ 创建弹性盒布局  
+-webkit弹性盒属性box-align、box-flex、box-pack
+	+ 创建简单的弹性盒
+	+ 伸缩多个元素 box-flex数值表示浏览器为其分配的多于空间是其他box-flex的倍数
+	+ 处理垂直空间box-align:start/end/strech/center
+	+ 处理最大尺寸 box-pack (start、end、center、justify)
++ 创建表格布局  
+跟表格布局相关的display属性table、inline-table、table-caption(类似于caption元素)、table-column(类似于col元素)、table-column-group(类似于colgroup元素)、table-header-group(类似于thead元素)、table-row-group(类似于tbody元素)、table-footer-group(类似于tfoot元素)、table-row(类似于tr元素)、table-cell(类似于td元素)
+
+## 第二十一章 设置文本样式
++ 应用基本文本样式
+	+ 对其文本 text-align(start/end/left/right/center/justify)、text-justify(auto/none/inter-word/inter-ideograph/inter-cluster/distribute/kashida)
+	+ 处理空白 whitespace属性(normal/nowrap/pre/pre-line/pre-wrap)
+	+ 指定文本方向 ltr/rtl
+	+ 指定单词、字母、行之间的间距letter-spacing/word-spacing/line-height
+	+ 控制断词 word-wrap属性(normal/break-word)
+	+ 首行缩进 text-indent 长度值/百分数
