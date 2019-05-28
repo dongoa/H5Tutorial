@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		p{
+			width: 30%;
+			padding: 5px;
+			border:medium double black;
+			background-color: lightgray;
+			margin: 2px;
+			float: left;
+		}
+		#fruittext{
+			outline: thick solid red;
+		}
+	</style>
+</head>
+<body>
+	<p >
+Bananas are well known for their high potassium content. A medium banana contains 422 mg of the adequate adult intake of 4,500 mg of potassium. Potassium helps the body control heart rate and blood pressure.
+
+Bananas are also a good source of energy, with one banana containing 105 calories and 26.95 g of carbohydrate.
+
+The 3.1 g of fiber in a regular banana can also help with regular bowel movements and stomach issues, such as ulcers and colitis.
+
+	</p>
+	<p id="fruittext">
+Bananas are well known for their high potassium content. A medium banana contains 422 mg of the adequate adult intake of 4,500 mg of potassium. Potassium helps the body control heart rate and blood pressure.
+
+Bananas are also a good source of energy, with one banana containing 105 calories and 26.95 g of carbohydrate.
+
+The 3.1 g of fiber in a regular banana can also help with regular bowel movements and stomach issues, such as ulcers and colitis.
+
+	</p>
+	<p >
+Bananas are well known for their high potassium content. A medium banana contains 422 mg of the adequate adult intake of 4,500 mg of potassium. Potassium helps the body control heart rate and blood pressure.
+
+Bananas are also a good source of energy, with one banana containing 105 calories and 26.95 g of carbohydrate.
+
+The 3.1 g of fiber in a regular banana can also help with regular bowel movements and stomach issues, such as ulcers and colitis.
+
+	</p>
+	<button>Outline Off</button>
+	<button>Outline On</button>
+	<script type="text/javascript">
+		var buttons = document.getElementsByTagName('BUTTON');
+		for(var i=0; i<buttons.length;i++){
+			buttons[i].onclick=function(e){
+				var elem = document.getElementById("fruittext");
+				if(e.target.innerHTML == "Outline Off"){
+					elem.style.outline="none";
+				}else{
+					elem.style.outlineColor="red";
+					elem.style.outlineStyle="solid";
+					elem.style.outlineWidth="thick";
+				}
+			}
+		}
+	</script>
+</body>
+</html>

@@ -418,7 +418,7 @@
 	浏览器|Chrome、Safari|Opera|Firefox|Internet Explorer
 	:-:|:-:|:-:|:-:|:-:
 	厂商  |-webkit       |  -o-|  -moz-|  -ms-
-+ 盒模型，内容、边框、内边距、外边距  
++ 盒模型，内容、边框(这两个可见)、内边距、外边距  
 块容器：父元素的内容盒子，可以用来限定元素外观。
 + 选择器简明参考
 
@@ -513,3 +513,19 @@
 	+ 使用:focus选择器
 + 其他伪类选择器
 	+ 使用否定选择器 :not(\<选择器\>)
+	+ 使用:empty选择器 匹配没有定义任何子元素的元素，不好演示
+	+ 使用:lang选择器 跟|=属性选择器匹配结果一样
+	+ 使用:target选择器，匹配URL**片段标识符**指向的元素。
+
+## 第十八章 使用边框和背景
++ 应用边框样式，三个关键属性border-width、border-style、border-color。
+	+ 定义边框宽度border-width:\<长度值(em、px、cm)\>、\<百分数(不支持)\>、thin、medium、thick
+	+ 定义边框样式border-style:none、dashed(破折线)、dotted(圆点)、double、groove、inset、outset、ridge、solid。
+	+ 为一条边应用边框样式 border-(top/bottom/left/right)-(width/style/color)
+	+ 使用border简写属性 border:\<宽度\>\<样式\>\<颜色\>顺序任意
+	+ 创建圆角边框 共5个属性 border-(top-left/top-right/bottom-left/bottom-right)-radius border-radius，值为一度长度值或百分数值，最后一个可以为4对
+	+ 将图像做边框 border-image-(source/slice/width/outset/repeat),border-image
+		+ 切分图像border-image
+		+ 控制切分图重复方式border-image-repeat stretch/repeat/round/space,两个值一个水平一个垂直
++ 设置元素的背景  
+	+ 设置背景颜色和图像background-repeat属性值:repeat-x/repeat-y/repeat/space/round/np-repeat
