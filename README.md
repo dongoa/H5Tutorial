@@ -585,4 +585,4 @@ inline、block、inline-block、list-item、run-in、compact(不支持)、flexbo
 text-decoration:none/underline/overline/line-through/blink
 text-transform:none/capitalize/uppercase/lowercase
 + 创建文本阴影 text-shadow属性h-shadow/v-shadow/blur/color
-+ 使用字体font:<font-style><font-variant><font-weight><font-size><font-family>
++ 使用字体font:\<font-style\>\<font-variant\>\<font-weight\>\<font-size\>\<font-family\>
