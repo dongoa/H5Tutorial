@@ -528,4 +528,12 @@
 		+ 切分图像border-image
 		+ 控制切分图重复方式border-image-repeat stretch/repeat/round/space,两个值一个水平一个垂直
 + 设置元素的背景  
-	+ 设置背景颜色和图像background-repeat属性值:repeat-x/repeat-y/repeat/space/round/np-repeat
+	+ 设置背景颜色和图像background-repeat属性值:repeat-x/repeat-y/repeat/space/round/np-repeat,只有一个值的话会使用同种样式
+	+ 设置背景图片的尺寸 backgournd-size属性值:长度值，百分数，预设值(contain、cover、auto)
+	+ 设置背景图像位置background-position:top/left/right/bottom/center
+	+ 设置元素的北京附着方式background-attachment属性值：fixed、local、scroll
+	+ 设置背景图像的开始位置和剪裁样式background-origin和background-clip:border-box/padding-box/content-box
+	+ 使用background简写属性background:color/postion/size/repeat/origin/clip/attachment/image
++ 创建盒子阴影  
+box-shadow:hoffset/voffset/blur/spread/color/inset后面4个为可选colorchrome必选
+	+ 应用轮廓，轮廓属性outline-(color/offset/style/width)
