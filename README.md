@@ -612,6 +612,7 @@ animation:\<animation-name\>\<animation-duration\>\<animation-timing-function\>\
 # DOM部分
 ## 第二十六章 使用Document对象
 + 使用Document元数据  
+
 	属性|说明|返回
 	:-:|:-|:-:
 	characterSet|返回文档字符集编码，只读|字符串
@@ -632,4 +633,3 @@ animation:\<animation-name\>\<animation-duration\>\<animation-timing-function\>\
 	怪异模式:compatMode:BackCompat
 	+ 使用Location对象  
 	Location对象的方法和属性  
-	
