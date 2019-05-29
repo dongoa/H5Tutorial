@@ -7,18 +7,26 @@
 	<meta name="description" content="A simple example">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<style type="text/css">
-		h1{
-			text-shadow: 0.1em .1em 1px lightgray;
-		}
 		p{
-			text-shadow: 5px 5px 20px black;
-
+			padding: 5px;
+			border:medium double black;
+			background-color: lightgrey;
+			margin: 2px;
+			float:left;
+			font-family: "HelveticaNeue Condensed", monosapce;
+			font-size: medium;
+		}
+		#first{
+			font-weight: bold;
+		}
+		#second{
+			font-style: italic;
+		}
 	</style>
 </head>
 <body>
-	<h1>One Piece (Japanese: ワンピース Hepburn: Wan Pīsu)</h1>
 	<p>
-		One Piece (Japanese: ワンピース Hepburn: Wan Pīsu) is a Japanese manga series written and illustratedbyEiichiro Oda.
+		<span id="first">One Piece </span><span id="second">(Japanese: ワンピース Hepburn: Wan Pīsu)</span> is a Japanese manga series written and illustratedbyEiichiro Oda.
 		One Piece has received praise for its storytelling, art, characterization, and humor. Several volumes of the manga have broken publishing records, including the highest initial printrunofanybookinJapan.
 	</p>
 </body>

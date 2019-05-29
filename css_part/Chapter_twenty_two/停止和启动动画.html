@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<style type="text/css">
+		#container{
+			padding: 5px;
+			border:medium double black;
+			background-color: lightgrey;
+			font-family: sans-serif;
+		}
+		#first{
+			-webkit-animation-duration: 2500ms;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction:alternate;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-name:'GrowShrink';
+		}
+		@-webkit-keyframes GrowShrink{
+			from{
+				font-size: large;
+				border:medium solid black;
+			}
+			to {
+				font-size: x-large;
+				border:medium solid white;
+				background-color: green;
+				color:white;
+				padding: 4px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<p id="container">
+		<span id="first">One Piece </span><span id="second">(Japanese: ワンピース Hepburn: Wan Pīsu)</span> is a Japanese manga series written and illustratedbyEiichiro Oda.
+		One Piece has received praise for its storytelling, art, characterization, and humor. Several volumes of the manga have broken publishing records, including the highest initial printrunofanybookinJapan.
+	</p>
+	<p>
+		<button>Running</button>
+		<button>Paused</button>
+	</p>
+	<script type="text/javascript">
+		var buttons = document.getElementsByTagName('BUTTON');
+		for(var i=0;i<buttons.length;i++){
+			buttons[i].onclick=function(e){
+				document.getElementById('first').style.webkitAnimationPlayState=e.target.innerHTML;
+			}
+		}
+	</script>
+</body>
+</html>

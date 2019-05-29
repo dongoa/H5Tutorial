@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<p id="container1">
+		<span id="first">One Piece </span><span id="second">(Japanese: ワンピース Hepburn: Wan Pīsu)</span> is a Japanese manga series written and illustratedbyEiichiro Oda.
+		One Piece has received praise for its storytelling, art, characterization, and humor. Several volumes of the manga have broken publishing records, including the highest initial printrunofanybookinJapan.
+	</p>
+	<p id="container2">
+		One Piece (Japanese: ワンピース Hepburn: Wan Pīsu) is a Japanese manga series written and illustratedbyEiichiro Oda.
+		One Piece has received praise for its storytelling, art, characterization, and humor. Several volumes of the manga have broken publishing records, including the highest initial printrunofanybookinJapan.
+	</p>
+	<script type="text/javascript">
+		document.writeln("<pre>URL: "+document.URL);
+		var elems = document.getElementsByTagName("p");
+		for(var i=0;i<elems.length;i++){
+			document.writeln("Element ID: "+elems[i].id);
+			elems[i].style.border="medium double black";
+			elems[i].style.padding="4px";
+		}
+		document.write("</pre>");
+	</script>
+</body>
+</html>

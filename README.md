@@ -586,3 +586,50 @@ text-decoration:none/underline/overline/line-through/blink
 text-transform:none/capitalize/uppercase/lowercase
 + 创建文本阴影 text-shadow属性h-shadow/v-shadow/blur/color
 + 使用字体font:\<font-style\>\<font-variant\>\<font-weight\>\<font-size\>\<font-family\>
+	+ 选择字体，通用字体serif/sans-serif/cursive/fantasy/monospace
+	+ 设置字体大小font-size:xx-small/x-small/small/medium/large/x-large/xx-large/smaller/larger/\<length\>\<%\>
+	+ 设置字体样式和粗细
+	+ 使用Web字体 谷歌字体网站有大量字体:https://fonts.google.com/
+
+## 第二十二章 过渡、动画和变换
++ 使用过渡 transition、transition-property、transition-duration、transition-timing-function、transition-delay
+	+ 创建反向过渡
+	+ 选择中间值的计算方式 ease、linear、ease-in、ease-out、ease-in-out
++ 使用动画  
+animation:\<animation-name\>\<animation-duration\>\<animation-timing-function\>\<animation-delay\>\<animation-iteration-count\>此外还有animation-direction、animation-play-state
+	+ 使用关键帧，设置初始状态from，指定中间关键帧，
+	+ 设置重复方向 animation-direction:nromal/alternate
+	+ 理解结束状态
+	+ 初始布局时应用动画
+	+ 重用关键帧
+	+ 为元素应用多个动画
+	+ 停止和启动动画 animation-play-state
++ 使用变换 transform,transform-origin
+	+ 应用变换 translate(X/Y) scale(X/Y) rotate skew(X/Y) matrix(4~6数字)
+	+ 指定元素变换的起点 transform-origin
+	+ 
+
+# DOM部分
+## 第二十六章 使用Document对象
++ 使用Document元数据  
+	属性|说明|返回
+	:-:|:-|:-:
+	characterSet|返回文档字符集编码，只读|字符串
+	charset|返回或设置字符集编码|字符串
+	compatMode|设置文档兼容性|字符串
+	cookie|获取或设置文档cookie|字符串
+	defaultCharset|获取浏览器所使用默认字符编码|字符串
+	defaultView|返回文档Window对象|Window
+	dir|获取或设置文档的文本方向|字符串
+	domain|获取或设置当前文档的域名|字符串
+	implementation|提供可用DOM功能的信息|DOMImplementation
+	lastModified|返回文档的最后修改时间|字符串
+	location|返回当前文档的URL信息|Location
+	readyState|提供当前文档的状态，只读|字符串
+	referrer|返回链接到当前文档的文档URL，HTTP标头值|字符串
+	title|获取或设置文档标题|字符串
+	+ 过去文档信息  
+	怪异模式:compatMode:BackCompat
+	+ 使用Location对象  
+	Location对象的方法和属性  
+	

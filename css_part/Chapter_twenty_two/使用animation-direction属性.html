@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<style type="text/css">
+		p{
+			padding: 5px;
+			border:medium double black;
+			background-color: lightgrey;
+			font-family: sans-serif;
+		}
+		#first{
+			font-size: large;
+			border:medium solid black;
+		}
+		#first:hover{
+			-webkit-animation-delay: 100ms;
+			-webkit-animation-duration: 500ms;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-name: 'GrowShrink';
+			-webkit-animation-direction:alternate;
+		}
+		@-webkit-keyframes GrowShrink{
+			from{
+				font-size: xx-small;
+				background-color: red;
+			}
+			50%{
+				background-color: yellow;
+				padding: 1px;
+			}
+			75%{
+				color: white;
+				padding: 2px;
+			}
+			to {
+				font-size: x-large;
+				border:medium solid white;
+				background-color: green;
+				color: white;
+				padding: 4px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<p>
+		<span id="first">One Piece </span><span id="second">(Japanese: ワンピース Hepburn: Wan Pīsu)</span> is a Japanese manga series written and illustratedbyEiichiro Oda.
+		One Piece has received praise for its storytelling, art, characterization, and humor. Several volumes of the manga have broken publishing records, including the highest initial printrunofanybookinJapan.
+	</p>
+</body>
+</html>
