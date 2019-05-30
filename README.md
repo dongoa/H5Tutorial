@@ -633,3 +633,130 @@ animation:\<animation-name\>\<animation-duration\>\<animation-timing-function\>\
 	怪异模式:compatMode:BackCompat
 	+ 使用Location对象  
 	Location对象的方法和属性  
+
+	属性|说明|返回
+	:-:|:-|:-:
+	protocol|获取或设置文档URL的协议部分|字符串
+	host|获取或设置文档URL的主机和端口部分|字符串
+	href|获取或设置当前文档的地址|字符串
+	hostname|获取或设置文档URL的主机名部分|字符串
+	port|获取或设置文档URL的端口部分|字符串
+	pathname|获取或设置文档URL的路径部分|字符串
+	search|获取或设置文档URl的查询问号串部分|字符串
+	hash|获取或设置文档URl的锚#部分|字符串
+	assign(URL)|导航到指定的URl上|void
+	replace(URL)|清除当前文档并导航到URL所指定的那个文档|void
+	reload()|重新载入当前文档|void
+	resolveURL(URL)|将指定的相对URL解析成绝对URL|字符串
+
+		+ 读取和写入cookie  
+		可以添加到cookie的额外字段path=/domain=/max-age=/expires=/secure
+		+ 理解就绪状态 readyState:loading/interactive/complete
+		+ 获取DOM的实现情况 document.implementation,可以用hasFeature方法判断哪些DOM功能已经实现
++ 获取HTML元素对象
+	+ document对象的元素属性  
+	activeElement、body、Embeds、plugins、forms、head、images、links、scripts，前面两个返回HTMLElement，后面返回HTMLCollection对象,以获取元素一个方法是用这些属性，另一个是namedItem，返回带有指定id或name的属性值。
+	+ 使用数组标记获取已命名元素
+	+ 搜索元素
+
+	属性|说明|返回
+	:-:|:-|:-:
+	getElementById(id)|返回带有指定id值的元素|HTMLElemnt
+	getElementsByClassName(class)|返回带有指定class值的元素|HTMLElement[]
+	getElementsByName(name)|返回带有指定name值的元素|HTMLElement[]
+	getElementsByTagName(tag)|返回指定类型的元素|HTMLElement[]
+	querySelector(selector)|返回匹配指定CSS选择器的第一个元素|HTMLElement
+	querySelectorAll(selector)|返回匹配指定CSS选择器的所有元素|HTMLElement[]
+
+	+ 合并进行链式搜索，除了getElementById方法
++ 在DOM树里导航 navigation属性和方法
+
+	属性|说明|返回
+	:-:|:-|:-:
+	childNodes|返回子元素组|HTMLElement[]
+	firstChild|返回第一个子元素|HTMLElement
+	hasChildNodes()|如果当前元素有子元素就返回true|布尔值
+	lastChild|返回倒数第一个子元素|HTMLElement
+	nextSibling|返回定义在当前元素之后的兄弟元素|HTMLElement
+	parentNode|返回父元素|HTMLElement
+	previousSibling|返回定义在当前元素之前的兄弟元素|HTMLElement
+
+	*DOM程序没写*
+
+## 第二十七章 使用Window对象
++ 获取方式两个window/document.defaultView
++ 获取窗口信息：窗口相关成员
+
+	名称|说明|返回
+	:-:|:-|:-:
+	innerHeight|获取窗口内容区域的高度|数值
+	innerWidth|获取窗口内容区域的宽度|数值
+	outerHeight|获取窗口的高度，包括边框和菜单栏|数值
+	outerWidth|获取窗口宽度，包括边框和菜单栏|数值
+	pageXOffset|获取窗口从左上角算起水平滚动过的像素数|数值
+	pageYOffset|获取窗口从左上角算起垂直滚动过的像素数|数值
+	screen|返回一个描述屏幕的Screen对象|Screen
+	screenLeft/screenX|获取窗口左边缘到屏幕左边缘的像素数|数值
+	screenTop/screenY|获取窗口上边缘到屏幕上边缘的像素数|数值
+
+	+ screen对象属性，availHeight/availWidth,colorDepth,height,width
++ 与窗口进行交互:Window的交互功能
+
+	名称|说明|返回
+	:-:|:-|:-:
+	blur()|让窗口键盘失去焦点|void
+	close()|关闭窗口(不是所有浏览器允许)|void
+	focus()|让窗口获得键盘焦点|void
+	print()|提示用户打印页面|void
+	scrollBy(x,y)|让文档相对于当前位置进行滚动|void
+	scrollTo(x,u)|滚动到指定位置|void
+	stop()|停止载入文档|void
+
++ 对用户进行提示:
+
+	名称|说明|返回
+	:-:|:-|:-:
+	alert(msg)|显示一个对话框等待被关闭|void
+	confirm(msg)|显示一个带有确认和取消提示对话框窗口|布尔值
+	prompt(msg,val)|显示对话框提示用户输入一个值|字符串
+	showModalDialog(url)|弹出一个窗口，显示指定url|void
+
+jQuery提供的内联对话框也很好用。
++ 获取基本信息：docuemnt/history/loaction
++ 使用浏览器历史  
+history的对象:back()/forward()/go(index)/length/pushState/replaceState/state
+*浏览历史没写*
++ 使用跨文档消息传递 postMessage(msg,origin)
++ 使用计时器：  
+clearInterval(id),clearTimeout(id),setInterval(function,time),setTimeout(function,time)
+
+## 第二十八章 使用DOM元素
++ 使用元素对象：  
+元素数据属性
+
+	属性|说明|返回
+	:-:|:-|:-:
+	checked|获取或设置checked属性是否存在|布尔值
+	classList|获取或设置元素所属类的列表|DMTokenList
+	className|获取或设置元素所属的类列表|字符串
+	dir|获取或设置dir属性的值|字符串
+	diasbled|获取或设置disabled属性是否存在|布尔值
+	hidden|获取或设置hidden属性是否存在|布尔值
+	id|获取或设置id属性的值|字符串
+	lang|获取或设置lang属性的值|字符串
+	spellcheck|获取或设置spellcheck属性是否存在|布尔值
+	tabIndex|获取或设置tabindex属性的值|数值
+	tagName|返回标签名|字符串
+	title|获取或设置title属性的值|字符串
+
+	+ 使用类 :一个方法是使用className属性，另一个是使用classList属性:  
+	DOMTokenList成员:add\contains\length\remove\toggle添加或移除，还可以使用数组风格
+	+ 使用元素属性
+
+	成员|说明|返回
+	:-:|:-|:-:
+	atrributes|返回应用到元素上的属性|Attr[]
+	dataset|返回以data-开头的属性|字符串数组[name]
+	getAttribue(name)|返回指定属性的值|字符串
+	removeAttribute(name)|从元素上移除指定属性|void
+	setAttribute(name,value)|应用以恶搞指定名称和值的属性|void

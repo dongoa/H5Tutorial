@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		table { border-collapse: collapse; border:thin solid black; }
+		th, td{  padding: 4px; }
+	</style>
+</head>
+<body>
+	<body>
+		<p>
+			<button id="alert">Alert</button>
+			<button id="confirm">Confirm</button>
+			<button id="prompt">Prompt</button>
+			<button id="modal">Modal Dialog</button>
+		</p>
+	</body>
+	<script type="text/javascript">
+		var buttons=document.getElementsByTagName("button");
+		for(var i=0;i<buttons.length;i++){
+			buttons[i].onclick=handleButtonPress;
+		}
+
+		function handleButtonPress(e){
+			if(e.target.id == "alert"){
+				window.alert("this is an alert");
+			}else if(e.target.id == "confirm"){
+				var confirmed
+				=window.confirm("this is a confirm - do you want to proceed?");
+			}else if(e.target.id == "prompt"){
+				var response
+				=window.prompt("Enter a word","hello");
+			}
+			else if(e.target.id == "modal"){
+				window.showModalDialog("http://apress.com");//不支持
+			}
+		}
+	</script>
+</body>
+</html>

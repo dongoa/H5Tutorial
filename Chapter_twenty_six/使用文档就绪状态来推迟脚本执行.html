@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		document.onreadystatechange = function(){
+			if(document.readyState == "interactive"){
+				document.getElementById("pressme").onclick=function(){
+					document.getElementById("results").innerHTML="Button Pressed";
+				}
+			}
+		}
+	</script>
+	<body>
+		<button id="pressme">Press Me</button>
+		<pre id="results"></pre>
+	</body>
+</body>
+</html>

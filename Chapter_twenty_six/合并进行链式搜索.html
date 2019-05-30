@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<style type="text/css">
+	pre { border:medium double black;  }
+	</style>
+</head>
+<body>
+	<pre id="results"></pre>
+	<p id="vis">
+		In all of these cases,<span id="interaction"> interaction<span> is crucial. For example, an interactive vis tool can support investigation at multiple levels of detail, ranging from a very high-level overview down through multiple
+levels of <span id="sum">summarization</span> to a fully detailed view of a small part of it.
+It can also present different ways of representing and summarizing the data in a way that supports understanding the connections
+between these <span id="alter">alternatives</span>.
+	</p>
+	<script type="text/javascript">
+		var resultsElement = document.getElementById("results");
+		
+		var elems=document.getElementById("vis").getElementsByTagName("span");
+		resultsElement.innerHTML += "There are " + elems.length
+		+ "span elements\n";
+
+		var elems2=document.getElementById("vis").querySelectorAll("span");
+		resultsElement.innerHTML += "There are " + elems.length
+		+ "span elements(Mix)\n";
+
+		var selElems=document.querySelectorAll("#vis > span");
+		resultsElement.innerHTML += "There are " + selElems.length
+		+ "span elements(CSS)\n";
+	</script>
+</body>
+</html>

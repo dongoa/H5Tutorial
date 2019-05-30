@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<style type="text/css">
+	pre { border:medium double black;  }
+	</style>
+</head>
+<body>
+	<pre id="results"></pre>
+	<img id="vis" src="vis.png" alt="vis"/>
+	<p>
+		In all of these cases, interaction is crucial. For example, an interactive vis tool can support investigation at multiple levels of detail, ranging from a very high-level overview down through multiple
+levels of summarization to a fully detailed view of a small part of it.
+It can also present different ways of representing and summarizing the data in a way that supports understanding the connections
+between these alternatives.
+	</p>
+	<img id="vis3" src="vis.png" alt="vis"/>
+	<p>
+		In all of these cases, interaction is crucial. For example, an interactive vis tool can support investigation at multiple levels of detail, ranging from a very high-level overview down through multiple
+levels of summarization to a fully detailed view of a small part of it.
+It can also present different ways of representing and summarizing the data in a way that supports understanding the connections
+between these alternatives.
+	</p>
+	<img id="vis2" src="vis2.png" alt="vis2"/>
+	<p>
+		In all of these cases, interaction is crucial. For example, an interactive vis tool can support investigation at multiple levels of detail, ranging from a very high-level overview down through multiple
+levels of summarization to a fully detailed view of a small part of it.
+It can also present different ways of representing and summarizing the data in a way that supports understanding the connections
+between these alternatives.
+	</p>
+	<script type="text/javascript">
+		var resultsElement = document.getElementById("results");
+		var elems=document["vis"]];
+		
+		if(elems.namedItem){
+			for(var i=0;i<elems.length;i++){
+				resultsElement.innerHTML += "Image Element: "+elems[i].id+"\n";
+			}
+		}else {
+			resultsElement.innerHTML += "Src for element is: "+elems.src+"\n";
+		}
+	</script>
+</body>
+</html>

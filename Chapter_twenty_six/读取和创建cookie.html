@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<p id="cookiedata">
+		
+	</p>
+	<button id="write">Add Cookie</button>
+	<button id="update">Update Cookie</button>
+	<script type="text/javascript">
+		var cookieCount=0;
+		document.getElementById("update").onclick=updateCookie;
+		document.getElementById("write").onclick=createCookie;
+		readCookies();
+
+		function readCookies(){
+			document.getElementById("cookiedata").innerHTML = document.cookie;
+		}
+
+		function createCookie(){
+			cookieCount++;
+			document.cookie = "Cookie_" + cookieCount + "=Value_" + cookieCount;
+			console.log(document.cookie);
+			readCookies();
+		}
+
+		function updateCookie(){
+			document.cookie = "Cookie_" + cookieCount+ "=Update_"+cookieCount;
+			readCookies();
+		}
+	</script>
+</body>
+</html>

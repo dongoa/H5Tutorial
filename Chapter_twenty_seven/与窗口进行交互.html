@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		table { border-collapse: collapse; border:thin solid black; }
+		th, td{  padding: 4px; }
+	</style>
+</head>
+<body>
+	<body>
+		<p>
+			<button id="scroll">Scroll</button>
+			<button id="print">Print</button>
+			<button id="close">Close</button>
+		</p>
+		<p>
+			Interactivity is crucial for building vis tools that handle complexity. When datasets are large enough, the limitations of both people
+and displays preclude just showing everything at once; interaction where user actions cause the view to change is the way forward. Moreover, a single static view can show only one aspect of
+a dataset. For some combinations of simple datasets and tasks,
+the user may only need to see a single visual encoding. In contrast, an interactively changing display supports many possible
+queries.
+In all of these cases, interaction is crucial. For example, an interactive vis tool can support investigation at multiple levels of detail, ranging from a very high-level overview down through multiple
+levels of summarization to a fully detailed view of a small part of it.
+It can also present different ways of representing and summarizing the data in a way that supports understanding the connections
+between these alternatives.
+Before the widespread deployment of fast computer graphics,
+visualization was limited to the use of static images on paper. With
+computer-based vis, interactivity becomes possible, vastly increasing the scope and capabilities of vis tools. Although static representations are indeed within the scope of this book, interaction is
+an intrinsic part of many idioms.
+		</p>
+	</body>
+	<script type="text/javascript">
+		var buttons=document.getElementsByTagName("button");
+		for(var i=0;i<buttons.length;i++){
+			buttons[i].onclick=handleButtonPress;
+		}
+
+		function handleButtonPress(e){
+			if(e.target.id == "print"){
+				window.print();
+			}else if(e.target.id == "close"){
+				window.close();
+			}else{
+				window.scrollTo(0,400);
+			}
+		}
+	</script>
+</body>
+</html>
