@@ -763,9 +763,10 @@ clearInterval(id),clearTimeout(id),setInterval(function,time),setTimeout(functio
 
 	+ 使用Text对象，元素的内容会有一个Text对象  
 	对象成员：appendData()添加指定字符串，data，deleteData，inertData，length，replaceData，replaceWholeText，splitText，substringData，wholeText
-	+ 修改模型
+	+ 修改模型  
 
 	DOM操作成员
+
 	成员|说明|返回
 	:-:|:-|:-:
 	appendChild()|将指定元素添加为当前元素的子元素|HTMLElement
