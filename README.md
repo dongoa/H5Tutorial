@@ -649,10 +649,10 @@ animation:\<animation-name\>\<animation-duration\>\<animation-timing-function\>\
 	reload()|重新载入当前文档|void
 	resolveURL(URL)|将指定的相对URL解析成绝对URL|字符串
 
-		+ 读取和写入cookie  
-		可以添加到cookie的额外字段path=/domain=/max-age=/expires=/secure
-		+ 理解就绪状态 readyState:loading/interactive/complete
-		+ 获取DOM的实现情况 document.implementation,可以用hasFeature方法判断哪些DOM功能已经实现
+	+ 读取和写入cookie  
+	可以添加到cookie的额外字段path=/domain=/max-age=/expires=/secure
+	+ 理解就绪状态 readyState:loading/interactive/complete
+	+ 获取DOM的实现情况 document.implementation,可以用hasFeature方法判断哪些DOM功能已经实现
 + 获取HTML元素对象
 	+ document对象的元素属性  
 	activeElement、body、Embeds、plugins、forms、head、images、links、scripts，前面两个返回HTMLElement，后面返回HTMLCollection对象,以获取元素一个方法是用这些属性，另一个是namedItem，返回带有指定id或name的属性值。
