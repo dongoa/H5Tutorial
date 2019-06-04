@@ -782,7 +782,6 @@ clearInterval(id),clearTimeout(id),setInterval(function,time),setTimeout(functio
 	replaceChild()|替换当前元素的某个子元素|HTMLElement
 	createElement()|创建一个属于指定标签类型的新HTMLElement对象|HTMLElement
 	createTextNode()|创建一个带有指定内容的新text对象|text
-
 		+ 创建和删除元素
 		+ 复制元素clone
 		+ 移动元素
