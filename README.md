@@ -760,3 +760,49 @@ clearInterval(id),clearTimeout(id),setInterval(function,time),setTimeout(functio
 	getAttribue(name)|返回指定属性的值|字符串
 	removeAttribute(name)|从元素上移除指定属性|void
 	setAttribute(name,value)|应用以恶搞指定名称和值的属性|void
+
+	+ 使用Text对象，元素的内容会有一个Text对象  
+	对象成员：appendData()添加指定字符串，data，deleteData，inertData，length，replaceData，replaceWholeText，splitText，substringData，wholeText
+	+ 修改模型
+
+	DOM操作成员
+	成员|说明|返回
+	:-:|:-|:-:
+	appendChild()|将指定元素添加为当前元素的子元素|HTMLElement
+	cloneNode(boolean)|复制一个元素|HTMLElement
+	compareDocumentPosition()|判断一个元素的相对位置|数值
+	innerHTML|获取或设置元素的内容|字符串
+	insertAdjacentHTML(pos,text)|相对于元素插入HTML|void
+	insertBefore(new,child)|在第二个元素之前插入第一个元素|HTMLElement
+	isEqualNode|判定指定元素之后与当前元素相同|布尔值
+	isSameNode()|判断指定元素是否就是当前元素|布尔值
+	outerHTML|获取或设置某个元素的HTML内容|字符串
+	removeChild()|从当前元素上移除指定子元素|HTMLELement
+	replaceChild()|替换当前元素的某个子元素|HTMLElement
+	createElement()|创建一个属于指定标签类型的新HTMLElement对象|HTMLElement
+	createTextNode()|创建一个带有指定内容的新text对象|text
+
+		+ 创建和删除元素
+		+ 复制元素clone
+		+ 移动元素
+		+ 比较元素对象
+		+ 使用相同元素
+		+ 使用HTML片段 innerHTML和outerHTML
+		+ 插入HTML片段 insertAdjacentHTML
+		+ 向文本块插入元素
+
+## 第二十九章 为DOM元素设置样式
++ 使用样式表 通过document.styleSheets属性访问
+CSSStyleSheet对象的成员  
+
+	成员|说明|返回
+	:-:|:-|:-:
+	cssRules|返回样式表的规则集合|CSSRuleList
+	deleteRules(pos)|从样式表中移除一条规则|void
+	disabled|获取或设置样式表的禁用状态|布尔值
+	href|返回链接样式表的href|字符串
+	insertRule(rule,pos)|插入一条新规则到样式表中|数值
+	media|返回应用到样式表上的媒介限制集合|MediaList
+	ownerNode|返回样式所定义的元素|HTMLElement
+	title|返回title属性的值|字符串
+	type|返回type属性的值|字符串

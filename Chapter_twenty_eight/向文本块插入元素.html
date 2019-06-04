@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<p id="textblock">
+		Interactivity is crucial for building vis tools that handle complexity. When datasets are large enough, the limitations of both people
+and displays preclude just showing everything at once; interaction where user actions cause the view to change is the way forward. Moreover, a single static view can show only one aspect of
+a dataset. For some combinations of simple datasets and tasks,
+the user may only need to see a single visual encoding. In contrast, an interactively changing display supports many possible
+queries.
+	</p>
+	<p>
+		<button id="insert">Insert Element</button>
+	</p>
+	<script type="text/javascript">
+		document.getElementById("insert").onclick=function(){
+			var textBlock = document.getElementById("textblock");
+			console.log(textBlock);
+			textBlock.firstChild.splitText(10);//分割文本节点
+			console.log(textBlock);
+			var newText=textBlock.childNodes[1].splitText(4).previousSibling;
+			console.log(newText);
+			textBlock.insertBefore(document.createElement("b"),newText).appendChild(newText);
+		}
+	</script>
+</body>
+</html>

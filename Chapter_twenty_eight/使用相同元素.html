@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<style type="text/css">
+		table{
+			border:solid thin black;
+			border-collapse: collapse;
+			margin: 10px;
+			float:left;
+		}
+		td{  padding: 4px 5px; }
+		p { clear:left;  }
+	</style>
+</head>
+<body>
+	<table border="1">
+		<thead><th>Fruit</th><th>Color</th></thead>
+		<tbody>
+			<tr><td>Apple</td><td>Yellow</td></tr>
+			<tr class="plumrow"><td>Plum</td><td>Purple</td></tr>
+		</tbody>
+	</table>
+
+	<table border="1">
+		<thead><th>Fruit</th><th>Color</th></thead>
+		<tbody>
+			<tr class="plumrow"><td>Plum</td><td>Purple</td></tr>
+		</tbody>
+	</table>
+	<pre id="results"></pre>
+	<script type="text/javascript">
+		var elems = document.getElementsByClassName("plumrow");
+		if(elems[0].isEqualNode(elems[1])){
+			document.getElementById("results").innerHTML="Elements are equal";
+		}else {
+			document.getElementById("results").innerHTML="Elements are NOT equal";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<style type="text/css">
+		p{
+			border: medium double black;
+		}
+	</style>
+</head>
+<body>
+	<p id="textblock" class="first text" data-fruit="apple">
+		In botany, a fruit is the seed-bearing structure in flowering plants (also known as angiosperms) formed from the ovary after flowering.
+
+Fruits are the means by which angiosperms disseminate seeds. Edible fruits, in particular, have propagated with the movements of humans and animals in a symbiotic relationship as a means for seed dispersal and nutrition; in fact, humans and many animals have become dependent on fruits as a source of food.[1] Accordingly, fruits account for a substantial fraction of the world's agricultural output, and some (such as the apple and the pomegranate) have acquired extensive cultural and symbolic meanings.
+	</p>
+	<pre id="results"></pre>
+	<script type="text/javascript">
+		var results= document.getElementById("results");
+		var elem = document.getElementById("textblock");
+
+		var attrs = elem.attributes;
+		for(var i=0;i<attrs.length;i++){
+			results.innerHTML += "Name: "+attrs[i].name + " Value: "+attrs[i].value + "\n";
+		}
+		attrs["data-fruit"].value="banana";
+
+		results.innerHTML += "Value of data-fruit attr: "+ attrs["data-fruit"].value;
+	</script>
+</body>
+</html>
