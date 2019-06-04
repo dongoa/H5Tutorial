@@ -782,14 +782,15 @@ clearInterval(id),clearTimeout(id),setInterval(function,time),setTimeout(functio
 	replaceChild()|替换当前元素的某个子元素|HTMLElement
 	createElement()|创建一个属于指定标签类型的新HTMLElement对象|HTMLElement
 	createTextNode()|创建一个带有指定内容的新text对象|text
-		+ 创建和删除元素
-		+ 复制元素clone
-		+ 移动元素
-		+ 比较元素对象
-		+ 使用相同元素
-		+ 使用HTML片段 innerHTML和outerHTML
-		+ 插入HTML片段 insertAdjacentHTML
-		+ 向文本块插入元素
+
+	+ 创建和删除元素
+	+ 复制元素clone
+	+ 移动元素
+	+ 比较元素对象
+	+ 使用相同元素
+	+ 使用HTML片段 innerHTML和outerHTML
+	+ 插入HTML片段 insertAdjacentHTML
+	+ 向文本块插入元素
 
 ## 第二十九章 为DOM元素设置样式
 + 使用样式表 通过document.styleSheets属性访问
