@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="author" content="DONGAo"/>
+	<meta name="description" content="A simple example">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<style title="core styles" type="text/css">
+	p{
+		border:medium double black;
+		background-color: lightgray;
+	}
+	#block1{ 
+		color:white; 
+		border:thick solid black;
+		background-color: gray;
+	}
+	</style>
+</head>
+<body>
+	<p id="block1">
+		Interactivity is crucial for building vis tools that handle complexity. When datasets are large enough, the limitations of both people
+and displays preclude just showing everything at once; interaction where user actions cause the view to change is the way forward. Moreover, a single static view can show only one aspect of
+a dataset. 
+	</p>	
+	<div><button id="pressme">Press Me </button></div>
+	<script type="text/javascript">
+		document.getElementById("pressme").onclick=function(){
+			document.styleSheets[0].disabled = !document.styleSheets[0].disabled;
+		}
+	</script>
+</body>
+</html>

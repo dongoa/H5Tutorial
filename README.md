@@ -807,3 +807,28 @@ CSSStyleSheet对象的成员
 	ownerNode|返回样式所定义的元素|HTMLElement
 	title|返回title属性的值|字符串
 	type|返回type属性的值|字符串
+
+	+ 使用媒介限制  
+	medialist对象成员appendMedium、deleteMedium、item、length、mediaText.
+	+ 禁用样式表 CSSStyleSheet.disabled
+	+ CSSRuleList对象成员：item(pos)、length  
+	CSSStyleRule对象的成员：cssText、parentStyleSheet、selectorText、style
++ 使用元素样式
++ 使用CSSStyleDeclaration对象：  
+cssText、getPropertyCSSValue(name)、getPropertyPriority(name)、getPropertyValue(name)、item(pos)、length、parentRule、removeProperty(name)、setProperty(name,value,priority)、style
+	+ 使用快捷属性
+	+ 常规属性，使用getPropertyValue方法获得css属性值
+	+ 获取属性重要性getPropertyPriority
++ 使用计算样式document.defaultView.getComputedStyle
+
+## 第三十章 使用事件
++ 使用简单事件处理器：一种通用模式，大多数事件都有一个对应的事件属性，其名称定义为on<eventname>
++ 理解时间流：一个事件的声明周期包括三个阶段，捕捉、目标、冒泡
+	+ 组织事件流前进e.stopPropagation().
+	+ 通过eventPhase属性查看阶段，
++ HTML事件
+	+ readystatechange document对象的事件
+
+## 第三十一章 使用元素专属对象
+
+# 高级
